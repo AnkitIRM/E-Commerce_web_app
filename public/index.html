@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cm94wmnju119prik5kc7l7h83"></script>
+    <script>
+        const menu = document.getElementById('categoriesMenu');
+        const button = document.getElementById('categoriesButton');
+      
+        button.addEventListener('click', (e) => {
+          e.stopPropagation(); // Prevent bubbling to window
+          menu.classList.toggle('show');
+        });
+      
+        // Hide dropdown on click outside
+        window.addEventListener('click', () => {
+          menu.classList.remove('show');
+        });
+      
+        // Keep dropdown open on hover
+        menu.addEventListener('mouseenter', () => {
+          menu.classList.add('show');
+        });
+      
+        menu.addEventListener('mouseleave', () => {
+          menu.classList.remove('show');
+        });
+      </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="icons/S.png" alt="">
+            </div>
+            <div class="search">
+                <input style="width: 500px;" type="text" placeholder="Search for Products, Brands and More">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><img src="icons/Homeicon.svg" alt=""> <span> <a href="https://smartcartggv.web.app//index.html">Home</a></span> </li>
+                    
+                    <div class="menu" id="categoriesMenu">
+                        <button style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;" class="menu-button" id="categoriesButton"> <img src="icons/categories.svg" alt="">categories </button>
+                        <div class="dropdown" id="dropdownMenu">
+                            <a href="shop.html?category=women">Shop Women</a>
+                            <a href="shop.html?category=men">Shop Men</a>
+                            <a href="shop.html?category=kids">Shop Kids</a>
+                            <a href="shop.html?category=gadgets">Shop Gadgets</a>
+                            
+
+                        </div>
+                      </div>
+                    
+                  
+                    <li><img src="icons/cart.svg" alt=""><a href="https://smartcartggv.web.app//shop.html"> shop</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="content">
+                <span>Find the most trending collections</span>
+                <div class="btn">
+                     <a href="https://smartcartggv.web.app//shop.html"><button>Shop Now &gt;</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <a href="https://smartcartggv.web.app//women.html">
+            <img src="HomepageImages/womenfashion.jpeg" alt="">
+            <div class="cardcontent">Women Fashion</div></a>
+        </div>
+        <div class="card">
+            <a href="https://smartcartggv.web.app//men.html">
+            <img src="HomepageImages/menfashion.jpeg" alt="">
+            <div class="cardcontent">Men Fashion</div></a>
+        </div>
+        <div class="card">
+            <a href="https://smartcartggv.web.app//kid.html">
+            <img src="HomepageImages/kidsfashion.jpeg" alt="">
+            <div class="cardcontent">Kids Fashion</div></a>
+        </div>
+        <div class="card">
+            <a href="https://smartcartggv.web.app//appliances.html">
+            <img src="HomepageImages/appliances.jpeg" alt="">
+            <div class="cardcontent">Appliances</div></a>
+        </div>
+        <div class="card">
+            <a href="https://smartcartggv.web.app//gadgets.html">
+            <img src="HomepageImages/gadgets.jpeg" alt="">
+            <div class="cardcontent">Gadgets</div></a>
+        </div>
+        <div class="card">
+            <a href="https://smartcartggv.web.app//furniture.html">
+            <img src="HomepageImages/furniture.jpeg" alt="">
+            <div class="cardcontent">furniture</div></a>
+        </div>
+    </div>
+    <div class="about">
+        <p>Grab your crazy deals starting at just Rs. 199</p>
+        <img src="HomepageImages/bg2.jpg" alt="">
+    </div>
+    <div class="seperation">
+
+    </div>
+    <div class="list">
+        <div class="list1">
+            <ul>
+                <li><img src="icons/globe.png" alt=""></li>
+                <li><h4>Worldwide Shipping</h6></li>
+                <li><p>Our services are available across the globe with smooth shipping and delivery</p></li>
+            </ul>
+        </div>
+        <div class="list2">
+            <ul>
+                <li><img src="icons/cloth.png" alt=""></li>
+                <li><h4>Best Quality</h4></li>
+                <li><p>Forget comprimising with quality with your favourite choice. Shop the best quality products form our brand</p></li>
+            </ul>
+        </div>
+        <div class="list3">
+            <ul>
+                <li><img src="icons/tag.png" alt=""></li>
+                <li><h4>Best Offers</h4></li>
+                <li><p>Avail exciting offers on top brands. Enjoy your shopping experience with great deals starting at just rs.199</p></li>
+            </ul>
+        </div>
+        <div class="list4">
+            <ul>
+                <li><img src="icons/lock.png" alt=""></li>
+                <li><h4>Secure Payments</h4></li>
+                <li><p>user details and payment procedure is end to end encrypted with our company's database</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul class="service">
+            <li class="top">Customer Service</li>
+            <li>Help Cente</li>
+            <li>FAQs</li>
+            <li>Shipping & Delivery</li>
+            <li>Return & Refund Policy</li>
+            <li>Order Tracking</li>
+        </ul>
+        <ul class="Quicklinks">
+            <li class="top">Quick Links</li>
+            <li>My Account</li>
+            <li>Wishlist</li>
+            <li>Gift Cards</li>
+            <li>Affiliate Program</li>
+            <li>Sell with Us</li>
+        </ul>
+        <ul class="Legal">
+            <li class="top">Legal</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Cookie Policy</li>
+        </ul>
+    </div>
+    <div class="footer2">
+        <div class="top">Follow Us</div>
+        <ul class="socialmedia">
+            <li><a href="https://www.facebook.com//SmartCart"><img src="icons/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com//SmartCart"><img src="icons/instagram.jpg" alt=""></a></li>
+            <li><a href="https://www.youtube.com//SmartCart"><img src="icons/youtube.png" alt=""></a></li>
+            <li><a href="https://www.twitter.com//SmartCart"><img src="icons/twitter.png" alt=""></a></li>
+        </ul>
+    </div>
+
+
+    
+      
+</body>
+</html>
+    

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WomenFashion</title>
+    <link rel="stylesheet" href="womenstyle.css">
+    <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cm94wmnju119prik5kc7l7h83"></script>
+    <script>
+        const menu = document.getElementById('categoriesMenu');
+        const button = document.getElementById('categoriesButton');
+      
+        button.addEventListener('click', (e) => {
+          e.stopPropagation(); // Prevent bubbling to window
+          menu.classList.toggle('show');
+        });
+      
+        // Hide dropdown on click outside
+        window.addEventListener('click', () => {
+          menu.classList.remove('show');
+        });
+      
+        // Keep dropdown open on hover
+        menu.addEventListener('mouseenter', () => {
+          menu.classList.add('show');
+        });
+      
+        menu.addEventListener('mouseleave', () => {
+          menu.classList.remove('show');
+        });
+      </script>
+</head>
+<body>
+        <nav>
+            <div class="logo">
+                <img src="icons/S.png" alt="">
+            </div>
+            <div class="search">
+                <input style="width: 500px;" type="text" placeholder="Search for Products, Brands and More">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><img src="icons/Homeicon.svg" alt=""> <span> <a href="https://smartcartggv.web.app//index.html">Home</a></span> </li>
+                    
+                    <div class="menu" id="categoriesMenu">
+                        <button style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;" class="menu-button" id="categoriesButton"> <img src="icons/categories.svg" alt="">categories </button>
+                        <div class="dropdown" id="dropdownMenu">
+                            <a href="shop.html?category=women">Shop Women</a>
+                            <a href="shop.html?category=men">Shop Men</a>
+                            <a href="shop.html?category=kids">Shop Kids</a>
+                            <a href="shop.html?category=gadgets">Shop Gadgets</a>
+
+                        </div>
+                      </div>
+                    
+                  
+                    <li><img src="icons/cart.svg" alt=""><a href="https://smartcartggv.web.app//shop.html"> shop</a> </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="banner">
+        <div class="content">
+            <P class="bold">Latest trends everyday</P>
+        <div class="seperator"></div>
+        <p>Min 40% Off</p>
+        <div class="btn">
+            <a href="shop.html?category=women"><button>Shop Now &gt;</button></a>
+        </div>
+        </div>
+        <img src="womenImages/bg3.jpg" alt="">
+    </div>
+
+    <div class="categories">
+        <div class="head1">Shop By Categories</div>
+        <div class="cardContainer">
+            <div class="card card1">
+                 <img src="womenImages/dress.jpg" alt="">
+                 <div class="about">Western Wear</div>
+            </div>
+            <div class="card card2"> 
+                <img src="womenImages/kurti.jpg" alt="">
+                <div class="about">Ethnic Wear</div>
+            </div>
+            <div class="card card3"> 
+                <img src="womenImages/saree.webp" alt="">
+                <div class="about">Sarees</div>
+            </div>
+            <div class="card card4"> 
+                <img src="womenImages/jewel.webp" alt="">
+                <div class="about">Jewellery</div>
+            </div>
+            <div class="card card5"> 
+                <img src="womenImages/accessories.avif" alt="">
+                <div class="about">Accessories</div>
+            </div>
+            <div class="card card6"> 
+                <img src="womenImages/cosmetics.jpg" alt="">
+                <div class="about">Cosmetics</div>
+            </div>
+            <div class="card card7"> 
+                <img src="womenImages/skincare.webp" alt="">
+                <div class="about">Skincare</div>
+            </div>
+            <div class="card card8"> 
+                <img src="womenImages/footwear.jpg" alt="">
+                <div class="about">Footwear</div>
+            </div>
+            <div class="card card9"> 
+                <img src="womenImages/lingerie.webp" alt="">
+                <div class="about">Lingerie</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="head2">Latest deals on top brands</div>
+    <div class="trending">
+        <div class="tcard">
+            <img src="womenImages/handmWomen.jpg" alt="">
+            <img src="womenImages/handm.png" alt="">
+            <div class="discount">Min 50% Off</div>
+        </div>
+        <div class="tcard">
+            <img src="womenImages/Bibacloth.webp" alt="">
+            <img src="womenImages/Biba.png" alt="">
+            <div class="discount">Min 40% Off</div>
+        </div>
+        <div class="tcard">
+            <img src="womenImages/marksandspencerCloth.avif" alt="">
+            <img src="womenImages/Marksandspencer.jpg" alt="">
+            <div class="discount">Min 40% Off</div>
+        </div>
+        <div class="tcard">
+            <img src="womenImages/LVImage.webp" alt="">
+            <img src="womenImages/LV.png" alt="">
+            <div class="discount">Min 60% Off</div>
+        </div>
+        <div class="tcard">
+            <img src="womenImages/NikeImage.jpg" alt="">
+            <img src="womenImages/Nike.jpg" alt="">
+            <div class="discount">Min 70% Off</div>
+        </div>
+        <div class="tcard">
+            <img src="womenImages/PumaImage.jpg" alt="">
+            <img src="womenImages/Puma.png" alt="">
+            <div class="discount">Min 50% Off</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul class="service">
+            <li class="top">Customer Service</li>
+            <li>Help Cente</li>
+            <li>FAQs</li>
+            <li>Shipping & Delivery</li>
+            <li>Return & Refund Policy</li>
+            <li>Order Tracking</li>
+        </ul>
+        <ul class="Quicklinks">
+            <li class="top">Quick Links</li>
+            <li>My Account</li>
+            <li>Wishlist</li>
+            <li>Gift Cards</li>
+            <li>Affiliate Program</li>
+            <li>Sell with Us</li>
+        </ul>
+        <ul class="Legal">
+            <li class="top">Legal</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Cookie Policy</li>
+        </ul>
+    </div>
+    <div class="footer2">
+        <div class="top">Follow Us</div>
+        <ul class="socialmedia">
+            <li><a href="https://www.facebook.com//SmartCart"><img src="icons/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com//SmartCart"><img src="icons/instagram.jpg" alt=""></a></li>
+            <li><a href="https://www.youtube.com//SmartCart"><img src="icons/youtube.png" alt=""></a></li>
+            <li><a href="https://www.twitter.com//SmartCart"><img src="icons/twitter.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>

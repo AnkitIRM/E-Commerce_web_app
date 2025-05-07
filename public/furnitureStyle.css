@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: aliceblue;
+
+}
+
+.menu {
+    position: relative;
+
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 150px;
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.dropdown a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #e8e8e8;
+}
+
+.menu:hover .dropdown,
+.menu.show .dropdown {
+    display: block;
+}
+
+
+.logo img {
+    height: 75px;
+    width: 75px;
+}
+
+nav {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(217 217 217);
+    position: sticky;
+    top: 0;
+}
+
+.search input {
+    padding: 16px 145px 8px 48px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+input[type=text] {
+    background-image: url(icons/searchicon.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 12px;
+}
+
+.right ul {
+    display: flex;
+    gap: 23px;
+    background-color: rgb(217 217 217);
+}
+
+.right ul li {
+    color: black;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    background-color: rgb(217 217 217);
+}
+
+.right a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right ul li span {
+    background-color: rgb(217 217 217);
+}
+
+.right ul li img {
+    background-color: rgb(217 217 217);
+}
+
+.container1 {
+    display: flex;
+    padding: 20px 30px;
+}
+
+.content {
+    width: 35vw;
+    height: 35vh;
+    padding: 70px;
+    background-color: rgb(110, 148, 253);
+
+}
+
+.under {
+    width: 35vw;
+    height: 35vh;
+    background-color: aliceblue;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.body1 {
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    padding: 5px;
+}
+
+.body1 img {
+    height: 400px;
+    width: 520px;
+    border: 1px solid black;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 30px;
+}
+
+.body2 {
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    padding: 5px;
+}
+
+.body2 img {
+    height: 400px;
+    width: 520px;
+    border: 1px solid black;
+}
+
+.container3 {
+    display: flex;
+    padding: 20px 30px;
+}
+
+.body3 {
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    padding: 5px;
+}
+
+.body3 img {
+    height: 400px;
+    width: 520px;
+    border: 1px solid black;
+}
+
+.room {
+    margin: 10px;
+    padding: 40px 30px;
+    display: flex;
+    gap: 50px;
+}
+
+.room img {
+    height: 333px;
+    width: 444px;
+}
+
+.roomcontent {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 30px;
+    background-color: rgb(110, 148, 253);
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 0 30px;
+    background-color: rgb(234, 237, 237);
+    display: flex;
+}
+
+.footer ul {
+    margin: 18px;
+    list-style: none;
+}
+
+.top {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    ;
+}
+
+.footer ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer2 {
+
+    padding: 10px 30px;
+    background-color: rgb(234, 237, 237);
+}
+
+.footer2 ul {
+    margin: 18px;
+    list-style: none;
+    display: flex;
+}
+
+.footer2 .top {
+    padding: 0 62px;
+}
+
+.footer2 ul img {
+    width: 50px;
+    height: 50px;
+}

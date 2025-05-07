@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadgets</title>
+    <link rel="stylesheet" href="gadgetsStyle.css">
+    <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cm94wmnju119prik5kc7l7h83"></script>
+    <script>
+        const menu = document.getElementById('categoriesMenu');
+        const button = document.getElementById('categoriesButton');
+      
+        button.addEventListener('click', (e) => {
+          e.stopPropagation(); // Prevent bubbling to window
+          menu.classList.toggle('show');
+        });
+      
+        // Hide dropdown on click outside
+        window.addEventListener('click', () => {
+          menu.classList.remove('show');
+        });
+      
+        // Keep dropdown open on hover
+        menu.addEventListener('mouseenter', () => {
+          menu.classList.add('show');
+        });
+      
+        menu.addEventListener('mouseleave', () => {
+          menu.classList.remove('show');
+        });
+      </script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="icons/S.png" alt="">
+        </div>
+        <div class="search">
+            <input style="width: 500px;" type="text" placeholder="Search for Products, Brands and More">
+        </div>
+        <div class="right">
+            <ul>
+                <li><img src="icons/Homeicon.svg" alt=""> <span> <a href="https://smartcartggv.web.app//index.html">Home</a></span> </li>
+                
+                <div class="menu" id="categoriesMenu">
+                    <button style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;" class="menu-button" id="categoriesButton"> <img src="icons/categories.svg" alt="">categories </button>
+                    <div class="dropdown" id="dropdownMenu">
+                        <a href="shop.html?category=women">Shop Women</a>
+                        <a href="shop.html?category=men">Shop Men</a>
+                        <a href="shop.html?category=kids">Shop Kids</a>
+                        <a href="shop.html?category=gadgets">Shop Gadgets</a>
+
+                    </div>
+                  </div>
+                
+              
+                <li><img src="icons/cart.svg" alt=""><a href="https://smartcartggv.web.app//shop.html"> shop</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container1">
+        <div class="content">Upgrade to the Latest Smartphones at Unbeatable Prices!
+            <br>
+            <br>
+            Shop top brands like Apple, Samsung, OnePlus, Xiaomi, and more—whether you need a flagship powerhouse or a budget-friendly performer, we’ve got you covered! 100% Original Phones, Best Deals, Fast Delivery & Easy Returns. Hurry, grab yours now before stock runs out! Shop Now!</div>
+        <div class="body1">
+            <img src="gadgetsImages/phone.png" alt="">
+        </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="body2">
+            <img src="gadgetsImages/laptop.png" alt="">
+        </div>
+        <div class="content">Upgrade to the Best Laptops at Unbeatable Prices!
+            <br>
+            <br>
+            Shop top brands like Apple, Dell, HP, Lenovo, Asus, and more—from high-performance gaming rigs to ultra-sleek work laptops, we have it all! Genuine Products, Best Deals, Fast Delivery & Easy Returns. Don’t miss out—grab yours today! Shop Now!</div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="content"> Experience Sound Like Never Before!
+            <br>
+            <br>
+            Shop top brands like Sony, Bose, JBL, Apple, and more—whether you need noise-canceling, wireless, or gaming headphones, we’ve got the perfect match for you! Best Prices, Original Products, Fast Delivery & Easy Returns. Upgrade your audio game today! Shop Now!</div>
+        <div class="body3">
+            <img src="gadgetsImages/headphones.png" alt="">
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul class="service">
+            <li class="top">Customer Service</li>
+            <li>Help Cente</li>
+            <li>FAQs</li>
+            <li>Shipping & Delivery</li>
+            <li>Return & Refund Policy</li>
+            <li>Order Tracking</li>
+        </ul>
+        <ul class="Quicklinks">
+            <li class="top">Quick Links</li>
+            <li>My Account</li>
+            <li>Wishlist</li>
+            <li>Gift Cards</li>
+            <li>Affiliate Program</li>
+            <li>Sell with Us</li>
+        </ul>
+        <ul class="Legal">
+            <li class="top">Legal</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Cookie Policy</li>
+        </ul>
+    </div>
+    <div class="footer2">
+        <div class="top">Follow Us</div>
+        <ul class="socialmedia">
+            <li><a href="https://www.facebook.com//SmartCart"><img src="icons/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com//SmartCart"><img src="icons/instagram.jpg" alt=""></a></li>
+            <li><a href="https://www.youtube.com//SmartCart"><img src="icons/youtube.png" alt=""></a></li>
+            <li><a href="https://www.twitter.com//SmartCart"><img src="icons/twitter.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="shop.css">
+    <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cm94wmnju119prik5kc7l7h83"></script>
+
+</head>
+
+<body>
+    <div id="logincontainer" class="logincontainer">
+        <div class="form-box">
+            <button id="closepop"><img src="icons/close.svg" alt="close"></button>
+            <h1 id="title">Sign Up</h1>
+            <form action="">
+                <div class="input-group">
+                    <!-- <div class="input-field" id="nameField">
+                        <img src="login/profile-user.png" alt="">
+                        <input type="text" placeholder="Name">
+                    </div> -->
+
+                    <div class="input-field">
+                        <img src="login/email.png" alt="">
+                        <input id="email" type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <img src="login/padlock.png" alt="">
+                        <input id="password" type="password" placeholder="Password">
+                    </div>
+
+                    <p>Forgot password? <a href="#">Click here</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="button" id="signinBtn">Sign In</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Shopping Cart -->
+    <div id="cartcontainer">
+        <div id="cartchild">
+            <div>
+                <h2 style="margin-bottom: 2rem;">Shopping Cart</h2>
+                <button id="closecart"><img src="icons/close.svg" alt="close"></button>
+
+            </div>
+
+            <div id="cart"></div>
+            <button id="checkoutBtn">Checkout</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- from here main structure of the page -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="icons/S.png" alt="">
+            </div>
+            <div class="search">
+                <input id="navinput" style="width: 500px;" type="text"
+                    placeholder="Search for Products, Brands and More">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><img src="icons/Homeicon.svg" alt=""> <a
+                            href="https://smartcartggv.web.app//index.html">home</a> </li>
+
+
+                    <button id="popup"
+                        style="display: flex; justify-content: center; align-items: center; padding: 0.5rem; border-radius: 5px; background-color: #e69fa5;">
+                        <img src="icons/profile.svg" alt="" style="margin-right: 0.5rem;">
+                        <p>login</p>
+                    </button>
+
+                    <li> <button id="cartbtn"
+                            style="padding: 0.5rem; border-radius: 5px;  background-color: #e69fa5; display: flex; justify-content: center; align-items: center; gap: 0.5rem;"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>Go to
+                            cart</button></span> </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div id="userinfoparrent">
+        <div id="user-info" style="text-align: right; font-weight: bold;">
+
+        </div>
+        <button id="signout">
+            <p>sign out</p>
+        </button>
+    </div>
+
+
+    <div class="container">
+
+
+
+
+        <!-- Product Listing -->
+        <h2>Products</h2>
+        <div id="select">
+            <button id="allbtn" class="active">All</button>
+            <button id="menbtn">Men</button>
+            <button id="womenbtn">Women</button>
+            <button id="kidbtn">Kids</button>
+            <button id="gadgetbtn">Gadgets</button>
+
+
+
+        </div>
+        <div id="products"></div>
+
+
+    </div>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script> -->
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
